@@ -3,6 +3,9 @@
 Esta version esta realizada bajo el template de CoreUI:
 https://github.com/coreui/coreui-free-angular-admin-template
 
+![Alt text](https://github.com/juanfdo4/AngularDashboardFirebase/blob/main/images/dashboard.png?raw=true?raw=true "Title")
+
+
 Modificaciones realizadas:
 
 Se implementa autenticacion con modolo de firebase solo debe modificar el archivo de environment.ts con la informacion que te suministra firebase:

@@ -7,20 +7,22 @@ Modificaciones realizadas:
 
 Se implementa autenticacion con modolo de firebase solo debe modificar el archivo de environment.ts con la informacion que te suministra firebase:
 
-$ export const environment = {
-$   production: false,
-$   firebase : {
-$     apiKey: "**********",
-$     authDomain: "**************",
-$     databaseURL: "***********",
-$     projectId: "**********",
-$     storageBucket: "***********",
-$     messagingSenderId: "**************",
-$     appId: "*****************",
-$     measurementId: "*************"
-$   }
-$ };
+``` bash
+export const environment = {
+  production: false,
+  firebase : {
+    apiKey: "**********",
+    authDomain: "**************",
+    databaseURL: "***********",
+    projectId: "**********",
+    storageBucket: "***********",
+    messagingSenderId: "**************",
+    appId: "*****************",
+    measurementId: "*************"
+  }
+};
 
+```
 
 ## Installation
 

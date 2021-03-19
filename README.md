@@ -1,4 +1,4 @@
-## Angular 11 + Dashnoard + firebase
+## Angular 11 + Dashboard + firebase
 
 Esta version esta realizada bajo el template de CoreUI:
 https://github.com/coreui/coreui-free-angular-admin-template

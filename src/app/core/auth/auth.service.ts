@@ -6,6 +6,7 @@ import * as firebase from 'firebase/app';
 import { from, Observable, of, throwError } from "rxjs";
 import { catchError, map, tap } from "rxjs/operators";
 import { user } from "../../models/auth/user";
+import { constants } from "../../shared/shared.constants";
 import { AuthUtils } from "./auth.utils";
 import { AuthToken } from "./guards/auth.token";
 
@@ -90,9 +91,24 @@ export class AuthService
       tap(user => {
         this.accessToken = new AuthToken().generateJWTToken();
         this._authenticated = true;
-        console.log(this._authenticated);
-
       }),
+      catchError((error, obs)=>{
+        console.log(error);
+
+        return throwError(error);
+      })
+    );
+  }
+  register(credentials: user): Observable<any>
+  {
+
+    let encodePassword:string = new AuthToken().encodePassword(credentials.password);
+    return from(this.afAuth.createUserWithEmailAndPassword(credentials.email, encodePassword))
+    .pipe(
+      map(credential => credential.user),
+      tap(user => {
+    this._authenticated = false;
+  }),
       catchError((error, obs)=>{
         console.log(error);
 

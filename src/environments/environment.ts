@@ -6,13 +6,13 @@
 export const environment = {
   production: false,
   firebase : {
-    apiKey: "**********",
-    authDomain: "**************",
-    databaseURL: "***********",
-    projectId: "**********",
-    storageBucket: "***********",
-    messagingSenderId: "**************",
-    appId: "*****************",
-    measurementId: "*************"
+    apiKey: "AIzaSyC1CFrs1vXV_ybitsjK548ab-KcFhUjSuU",
+    authDomain: "angulardashboardfirebase.firebaseapp.com",
+    databaseURL: "https://angulardashboardfirebase-default-rtdb.firebaseio.com",
+    projectId: "angulardashboardfirebase",
+    storageBucket: "angulardashboardfirebase.appspot.com",
+    messagingSenderId: "345286832307",
+    appId: "1:345286832307:web:a9dd5982c6a4be1f5b80c6",
+    measurementId: "G-Y5CLVY31K8"
   }
 };

@@ -3,6 +3,8 @@
 Esta version esta realizada bajo el template de CoreUI:
 https://github.com/coreui/coreui-free-angular-admin-template
 
+Demo: https://angulardashboardfirebase.web.app/
+
 Puedes aportar o donar en este enlace: https://paypal.me/juanfdo4
 
 ## Dashboard
